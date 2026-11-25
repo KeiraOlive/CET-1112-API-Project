@@ -1,0 +1,71 @@
+@@ -0,0 +1,70 @@
+
+# Weather Information Application
+
+# Function 1: Check current weather
+def current_weather():
+    print("\n--- Current Weather ---")
+    print("Current weather feature selected.")
+    # API code will be added later
+
+
+# Function 2: View 5-day forecast
+def weather_forecast():
+    print("\n--- 5-Day Forecast ---")
+    print("5-day forecast feature selected.")
+    # API code will be added later
+
+
+# Function 3: Search another city
+def search_city():
+    print("\n--- Search Another City ---")
+    city = input("Enter a city name: Ahmedabad, London, Toronto, Montreal, New York, Sudbury, Winnipeg")
+    print("You searched for:", city)
+    # API code will be added later
+
+
+# Function 4: Detailed weather information
+def detailed_weather():
+    print("\n--- Detailed Weather ---")
+    print("Detailed weather feature selected.")
+    # API code will be added later
+
+
+# Main menu function
+def menu():
+    while True:
+        print("\n================================")
+        print("       WELCOME TO WEATHER APP")
+        print("================================")
+        print("1. Check Current Weather")
+        print("2. View 5-Day Forecast")
+        print("3. Search Another City")
+        print("4. View Detailed Weather")
+        print("5. Exit Application")
+        print("================================")
+
+        choice = input("Please enter your choice (1-5): ")
+
+        if choice == "1":
+            current_weather(Toronto weather: 31F, India Ahmedabad: 17, Montreal 0)
+
+        elif choice == "2":
+            weather_forecast(Toronto weather: 31F clear H:4 L:-3, India Ahmedabad: 17 clear H:31 L:17, Montreal 0 clear H:1 L:-3)
+
+        elif choice == "3":
+            search_city(Ahmedabad, London, Toronto, Montreal, New York, Sudbury, Winnipeg)
+
+        elif choice == "4":
+            detailed_weather(Toronto weather: 31F clear H:4 L:-3, India Ahmedabad: 17 clear H:31 L:17, Montreal 0 clear H:1 L:-3)
+
+        elif choice == "5":
+            print("\nThank you for using Weather App!")
+            print("Goodbye!")
+            break
+
+        else:
+            print("\nInvalid choice. Please enter a number from 1 to 5.")
+
+
+# Start the application
+menu()
